@@ -1,206 +1,122 @@
 /* =========================================
-   1. VARIABLES (Control your theme here)
+   1. VARIABLES & GLOBALS
    ========================================= */
 :root {
-    /* Colors */
-    --primary-color: #8b6f47;    /* Gold/Brown */
-    --text-color: #333333;       /* Dark Grey */
-    --text-light: #6c757d;       /* Light Grey */
-    --danger-color: #dc3545;     /* Red */
-    --danger-hover: #bb2d3b;     /* Darker Red */
+    --primary-color: #8b6f47;
+    --text-color: #333333;
+    --text-light: #6c757d;
+    --danger-color: #dc3545;
+    --danger-hover: #bb2d3b;
     --bg-white: #ffffff;
     --bg-light: #f8f9fa;
-
-    /* Fonts */
     --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* =========================================
-   2. GLOBAL RESETS & TYPOGRAPHY
-   ========================================= */
-* {
-    box-sizing: border-box; /* Ensures padding doesn't break widths */
-}
+* { box-sizing: border-box; }
 
 body {
     font-family: var(--font-main);
     color: var(--text-color);
     margin: 0;
     line-height: 1.6;
+    overflow-x: hidden; /* Prevents side-scrolling on mobile */
 }
 
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    margin-top: 0;
-}
+a { text-decoration: none; color: inherit; transition: 0.3s; }
 
 /* =========================================
-   3. COMPONENTS & BUTTONS
+   2. HEADER & NAVIGATION
    ========================================= */
-.accordion-button {
-    font-weight: 600;
+header.navbar {
+    padding: 0.5rem 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
-.det-button {
-    display: inline-block;
-    padding: 0.5rem 1.5rem;
-    border-radius: 5px;
-    font-weight: 600;
-    text-align: center;
-    margin-right: 0.5rem;
-    margin-top: 0.5rem;
-    transition: background-color 0.2s;
+.nav-link {
+    transition: color 0.3s;
 }
 
-.btn-red {
-    background: var(--danger-color);
-    color: #fff;
-}
-
-.btn-red:hover {
-    background: var(--danger-hover);
-    color: white;
-}
-
-.btn-white {
-    background: var(--bg-white);
-    color: var(--text-color);
-    border: 1px solid #ccc;
-}
-
-.btn-white:hover {
-    background: var(--bg-light);
-    color: var(--text-color);
-}
-
-/* =========================================
-   4. HEADER & NAVIGATION
-   ========================================= */
-header {
-    padding: 1rem 0;
-}
-
-.logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-/* Force removal of text decoration on header links */
-header a,
-header a:hover,
-header a:focus,
-header a:active {
+/* Force removal of decoration on all header states */
+header a, header a:hover, header a:focus {
     text-decoration: none !important;
 }
 
 /* =========================================
-   5. PROJECT LAYOUT & IMAGES
+   3. IMAGES & CARDS (The "Anti-Distortion" Fix)
    ========================================= */
-.service-title {
-    color: var(--primary-color);
-    font-weight: 700;
-}
-
-.project-details h1 {
-    font-weight: 700;
-    margin-bottom: 0.5rem;
-}
-
-/* Project Images */
-.project-banner img {
-    border-radius: 8px;
-    width: 100%;
-    height: 100%;
+/* This ensures images never stretch or squish */
+.img-fluid {
     object-fit: cover;
+}
+
+.project-banner img {
+    border-radius: 12px;
+    width: 100%;
     cursor: pointer;
-    transition: opacity 0.3s;
+    transition: transform 0.3s ease;
 }
 
-.project-banner img:hover {
-    opacity: 0.9;
-}
-
-.main-img {
-    height: 450px;
-}
-
-.side-img {
-    height: 312px;
-    margin-bottom: 0px;
-    position: relative;
-}
+.main-img { height: 450px; }
+.side-img { height: 217px; position: relative; }
 
 .project-logo {
-    width: 160px;
-    height: 160px;
+    width: 140px;
+    height: 140px;
     object-fit: cover;
-    border-radius: 12px;
+    border-radius: 15px;
     border: 1px solid #eee;
 }
 
-/* Carousel/Modal Images */
-.carousel-item img {
-    max-height: 80vh;
-    object-fit: contain;
-    background: #000;
-}
-
-/* Image Overlay */
-.view-images-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
+/* Service & Card Images */
+.card-img-top, .card-body img {
+    height: 250px; /* Fixed height for consistency */
     width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.6);
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    object-fit: cover; /* Crops rather than distorts */
     border-radius: 8px;
-    cursor: pointer;
-    opacity: 0.9;
-    transition: 0.3s;
-}
-
-.view-images-overlay:hover {
-    background: rgba(0, 0, 0, 0.7);
 }
 
 /* =========================================
-   6. UTILITIES & INFO
+   4. COMPONENTS
    ========================================= */
-.info-label {
-    font-size: 0.85rem;
-    color: var(--text-light);
-    display: block;
-    margin-bottom: 2px;
-}
-
-.info-value {
-    font-weight: 700;
-    font-size: 1.1rem;
-    margin: 0;
-}
-
-.feature-box {
-    padding: 1.5rem;
-    background: var(--bg-white);
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-    font-weight: 500;
-}
-
 .transition-hover {
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .transition-hover:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175) !important;
+    transform: translateY(-8px);
+    box-shadow: 0 1rem 3rem rgba(0,0,0,0.15) !important;
+}
+
+.view-images-overlay {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    display: flex; flex-direction: column;
+    justify-content: center; align-items: center;
+    border-radius: 12px; cursor: pointer;
+}
+
+/* =========================================
+   5. MOBILE RESPONSIVENESS (The "Beautiful" Fix)
+   ========================================= */
+@media (max-width: 768px) {
+    section { padding: 3rem 0 !important; }
+    
+    /* Re-center details on mobile */
+    .project-details { text-align: center; }
+    .project-details .d-flex { flex-direction: column; align-items: center; text-align: center; }
+    
+    /* Adjust banner image heights for phone screens */
+    .main-img { height: 250px; }
+    .side-img { height: 180px; margin-top: 15px; }
+    
+    /* Grid cards should show 1 per row on very small screens */
+    .col-6 { width: 100% !important; }
+    
+    .info-value { font-size: 1rem; }
+    
+    /* Scale down fixed floating buttons */
+    .position-fixed.p-3 { padding: 10px !important; }
+    .position-fixed .btn { width: 45px !important; height: 45px !important; }
 }
