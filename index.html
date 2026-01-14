@@ -9,63 +9,95 @@
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet">
-      <link
-  href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
-  rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+      rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
   </head>
 
   <body>
 
     <header class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-  <div class="container">
-    <a class="navbar-brand text-white" href="index.html">MaraInfra</a>
-    
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+      <div class="container">
+        <a class="navbar-brand text-white" href="index.html">MaraInfra</a>
 
-    <div class="collapse navbar-collapse" id="mainNav">
-      <ul class="navbar-nav ms-auto gap-lg-4 py-3 py-lg-0">
-        <li class="nav-item"><a class="nav-link text-white fw-semibold" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link text-white fw-semibold" href="services.html">Services</a></li>
-        <li class="nav-item"><a class="nav-link text-white fw-semibold" href="career.html">Career</a></li>
-        
-        <li class="nav-item dropdown">
-          <a class="nav-link text-white dropdown-toggle fw-semibold" href="#" data-bs-toggle="dropdown">Contact Us</a>
-          <div class="dropdown-menu dropdown-menu-end p-4 shadow-lg" style="width: 320px;">
-            <h6 class="fw-bold mb-2">Mara Infra Constructions</h6>
-            <p class="small mb-2">📞 <a href="tel:+919962116999">+91 99621 16999</a></p>
-            <p class="small mb-3">✉️ <a href="mailto:admin@marainfra.co.in">admin@marainfra.co.in</a></p>
-            <a href="https://forms.gle/kYQ7Nsb2p19SJwCp8" target="_blank" class="btn btn-danger btn-sm w-100">Request Estimate</a>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </div>
-</header>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#mainNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto gap-lg-4 py-3 py-lg-0">
+            <li class="nav-item"><a class="nav-link text-white fw-semibold"
+                href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link text-white fw-semibold"
+                href="services.html">Services</a></li>
+            <li class="nav-item"><a class="nav-link text-white fw-semibold"
+                href="career.html">Career</a></li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link text-white dropdown-toggle fw-semibold"
+                href="#" data-bs-toggle="dropdown">Contact Us</a>
+              <div
+                class="dropdown-menu dropdown-menu-end p-3 shadow-lg border-0"
+                style="width: 320px; border-radius: 12px;">
+                <h6 class="fw-bold mb-2">Mara Infra Constructions</h6>
+                <p class="  small mb-2">📞 <a href="tel:+919962116999"
+                    class=" text-dark">+91 99621
+                    16999</a></p>
+                    <p class="small mb-2">📞 <a href="tel:+919962116999"
+                    class=" text-dark">+91 99621 72999 </a></p>
+                <p class="text-primary small mb-3">✉️ <a href="mailto:admin@marainfra.co.in"
+                    class=" text-primary">admin@marainfra.co.in</a></p>
+                    <p class="text-primary small mb-3">✉️ <a href="mailto:admin@marainfra.co.in"
+                    class=" text-primary">madhan@marainfra.co.in</a></p>
+
+                <div class="mb-3 overflow-hidden rounded-3 shadow-sm"
+                  style="height: 200px;">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3888.0676646328156!2d80.213607!3d12.967522!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525d673e9289a5%3A0x8e09c245db4c1e47!2sMara%20infra%20Constructions!5e0!3m2!1sen!2sus!4v1768383370066!5m2!1sen!2sus"
+                    width="600" height="450" style="border:0;" allowfullscreen
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+                <a href="https://forms.gle/kYQ7Nsb2p19SJwCp8" target="_blank"
+                  class="btn btn-danger btn-sm w-100 fw-bold">Request
+                  Estimate</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
 
     <section class="project-banner py-4">
-  <div class="container">
-    <div class="row g-3">
-      <div class="col-12 col-lg-9">
-        <img src="./assets/test (1).jpg" class="main-img img-fluid shadow-sm" data-bs-toggle="modal" data-bs-target="#galleryModal" onclick="openGallery(0)">
-      </div>
-      <div class="col-12 col-lg-3 d-flex flex-column gap-3">
-        <div class="side-img">
-          <img src="./assets/test (2).jpg" class="img-fluid h-100 shadow-sm" data-bs-toggle="modal" data-bs-target="#galleryModal" onclick="openGallery(1)">
-        </div>
-        <div class="side-img">
-          <img src="./assets/test (3).jpg" class="img-fluid h-100 shadow-sm">
-          <div class="view-images-overlay" data-bs-toggle="modal" data-bs-target="#galleryModal" onclick="openGallery(2)">
-            <h3 class="mb-0">+</h3>
-            <small>Gallery</small>
+      <div class="container">
+        <div class="row g-3">
+          <div class="col-12 col-lg-9">
+            <img src="./assets/test (1).jpg"
+              class="main-img img-fluid shadow-sm" data-bs-toggle="modal"
+              data-bs-target="#galleryModal" onclick="openGallery(0)">
+          </div>
+          <div class="col-12 col-lg-3 d-flex flex-column gap-3">
+            <div class="side-img">
+              <img src="./assets/test (2).jpg" class="img-fluid h-100 shadow-sm"
+                data-bs-toggle="modal" data-bs-target="#galleryModal"
+                onclick="openGallery(1)">
+            </div>
+            <div class="side-img">
+              <img src="./assets/test (3).jpg"
+                class="img-fluid h-100 shadow-sm">
+              <div class="view-images-overlay" data-bs-toggle="modal"
+                data-bs-target="#galleryModal" onclick="openGallery(2)">
+                <h3 class="mb-0">+</h3>
+                <small>Gallery</small>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
     <section class="project-details py-5">
       <div class="container">
@@ -120,7 +152,8 @@
         <div class="row g-5 align-items-start">
 
           <div class>
-            <h3 class="text-center mb-4 fw-bold">About Mara Infra Constructions</h3>
+            <h3 class="text-center mb-4 fw-bold">About Mara Infra
+              Constructions</h3>
 
             <p>
               <strong>Mara Infra Construction Company</strong> is led by
@@ -231,201 +264,204 @@
     </section>
 
     <section class="py-5 bg-light">
-  <div class="container">
+      <div class="container">
 
-    <div class="text-center mb-5">
-      <h3 class="fw-bold">Our Services</h3>
-      <p class="text-muted">
-        Built on Expertise. Driven by Precision. Delivered with Integrity.
-      </p>
-    </div>
+        <div class="text-center mb-5">
+          <h3 class="fw-bold">Our Services</h3>
+          <p class="text-muted">
+            Built on Expertise. Driven by Precision. Delivered with Integrity.
+          </p>
+        </div>
 
-    <div class="row g-4">
+        <div class="row g-4">
 
-      <div class="col-md-6 col-lg-4">
-        <div class="card h-100 shadow-sm border-0">
-          <div class="card-body">
-            <h5 class="fw-bold">Custom Home Building</h5>
-            <p class="text-muted mb-0">
-              End-to-end construction of custom homes tailored to client requirements,
-              quality standards, and timelines.
-            </p>
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm border-0">
+              <div class="card-body">
+                <h5 class="fw-bold">Custom Home Building</h5>
+                <p class="text-muted mb-0">
+                  End-to-end construction of custom homes tailored to client
+                  requirements,
+                  quality standards, and timelines.
+                </p>
+              </div>
+            </div>
           </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm border-0">
+              <div class="card-body">
+                <h5 class="fw-bold">Villas & Apartment Complexes</h5>
+                <p class="text-muted mb-0">
+                  High-quality residential developments with efficient planning,
+                  durability, and modern design execution.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm border-0">
+              <div class="card-body">
+                <h5 class="fw-bold">Renovations & Extensions</h5>
+                <p class="text-muted mb-0">
+                  Structural and aesthetic upgrades to enhance existing spaces
+                  while maintaining safety and compliance.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm border-0">
+              <div class="card-body">
+                <h5 class="fw-bold">Interior Finishing & Design Integration</h5>
+                <p class="text-muted mb-0">
+                  Seamless coordination between civil works and interior
+                  finishes
+                  for a refined and functional living experience.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm border-0">
+              <div class="card-body">
+                <h5 class="fw-bold">Office & School Buildings</h5>
+                <p class="text-muted mb-0">
+                  Construction of functional, safe, and scalable institutional
+                  and commercial spaces.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm border-0">
+              <div class="card-body">
+                <h5 class="fw-bold">Retail Outlets & Showrooms</h5>
+                <p class="text-muted mb-0">
+                  Customer-focused commercial spaces designed for visibility,
+                  accessibility, and operational efficiency.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm border-0">
+              <div class="card-body">
+                <h5 class="fw-bold">Warehouses & Industrial Units</h5>
+                <p class="text-muted mb-0">
+                  Robust industrial infrastructure built for logistics,
+                  storage efficiency, and long-term durability.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm border-0">
+              <div class="card-body">
+                <h5 class="fw-bold">Hospitality & Sewage Treatment Plants</h5>
+                <p class="text-muted mb-0">
+                  Specialized construction solutions for hospitality projects
+                  and essential infrastructure facilities.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm border-0">
+              <div class="card-body">
+                <h5 class="fw-bold">Kitchen & Bathroom Remodeling</h5>
+                <p class="text-muted mb-0">
+                  Modern remodeling solutions focused on functionality,
+                  aesthetics, and optimized space usage.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm border-0">
+              <div class="card-body">
+                <h5 class="fw-bold">Structural Upgrades</h5>
+                <p class="text-muted mb-0">
+                  Reinforcement and retrofitting solutions to improve
+                  building strength and safety.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm border-0">
+              <div class="card-body">
+                <h5 class="fw-bold">Facade Revamps</h5>
+                <p class="text-muted mb-0">
+                  Exterior upgrades that enhance building appearance
+                  while improving protection and longevity.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm border-0">
+              <div class="card-body">
+                <h5 class="fw-bold">Green Building Certification (LEED,
+                  IGBC)</h5>
+                <p class="text-muted mb-0">
+                  Support and execution for environmentally responsible
+                  and certified green buildings.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm border-0">
+              <div class="card-body">
+                <h5 class="fw-bold">Solar & Rainwater Integration</h5>
+                <p class="text-muted mb-0">
+                  Sustainable solutions that reduce operational costs
+                  and environmental impact.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm border-0">
+              <div class="card-body">
+                <h5 class="fw-bold">Energy-Efficient HVAC & Lighting
+                  Systems</h5>
+                <p class="text-muted mb-0">
+                  Efficient mechanical and electrical systems designed
+                  for performance and energy savings.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm border-0">
+              <div class="card-body">
+                <h5 class="fw-bold">Sustainable Material Sourcing</h5>
+                <p class="text-muted mb-0">
+                  Responsible material selection to ensure durability,
+                  cost-effectiveness, and sustainability.
+                </p>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
-
-      <div class="col-md-6 col-lg-4">
-        <div class="card h-100 shadow-sm border-0">
-          <div class="card-body">
-            <h5 class="fw-bold">Villas & Apartment Complexes</h5>
-            <p class="text-muted mb-0">
-              High-quality residential developments with efficient planning,
-              durability, and modern design execution.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-6 col-lg-4">
-        <div class="card h-100 shadow-sm border-0">
-          <div class="card-body">
-            <h5 class="fw-bold">Renovations & Extensions</h5>
-            <p class="text-muted mb-0">
-              Structural and aesthetic upgrades to enhance existing spaces
-              while maintaining safety and compliance.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-6 col-lg-4">
-        <div class="card h-100 shadow-sm border-0">
-          <div class="card-body">
-            <h5 class="fw-bold">Interior Finishing & Design Integration</h5>
-            <p class="text-muted mb-0">
-              Seamless coordination between civil works and interior finishes
-              for a refined and functional living experience.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-6 col-lg-4">
-        <div class="card h-100 shadow-sm border-0">
-          <div class="card-body">
-            <h5 class="fw-bold">Office & School Buildings</h5>
-            <p class="text-muted mb-0">
-              Construction of functional, safe, and scalable institutional
-              and commercial spaces.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-6 col-lg-4">
-        <div class="card h-100 shadow-sm border-0">
-          <div class="card-body">
-            <h5 class="fw-bold">Retail Outlets & Showrooms</h5>
-            <p class="text-muted mb-0">
-              Customer-focused commercial spaces designed for visibility,
-              accessibility, and operational efficiency.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-6 col-lg-4">
-        <div class="card h-100 shadow-sm border-0">
-          <div class="card-body">
-            <h5 class="fw-bold">Warehouses & Industrial Units</h5>
-            <p class="text-muted mb-0">
-              Robust industrial infrastructure built for logistics,
-              storage efficiency, and long-term durability.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-6 col-lg-4">
-        <div class="card h-100 shadow-sm border-0">
-          <div class="card-body">
-            <h5 class="fw-bold">Hospitality & Sewage Treatment Plants</h5>
-            <p class="text-muted mb-0">
-              Specialized construction solutions for hospitality projects
-              and essential infrastructure facilities.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-6 col-lg-4">
-        <div class="card h-100 shadow-sm border-0">
-          <div class="card-body">
-            <h5 class="fw-bold">Kitchen & Bathroom Remodeling</h5>
-            <p class="text-muted mb-0">
-              Modern remodeling solutions focused on functionality,
-              aesthetics, and optimized space usage.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-6 col-lg-4">
-        <div class="card h-100 shadow-sm border-0">
-          <div class="card-body">
-            <h5 class="fw-bold">Structural Upgrades</h5>
-            <p class="text-muted mb-0">
-              Reinforcement and retrofitting solutions to improve
-              building strength and safety.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-6 col-lg-4">
-        <div class="card h-100 shadow-sm border-0">
-          <div class="card-body">
-            <h5 class="fw-bold">Facade Revamps</h5>
-            <p class="text-muted mb-0">
-              Exterior upgrades that enhance building appearance
-              while improving protection and longevity.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-6 col-lg-4">
-        <div class="card h-100 shadow-sm border-0">
-          <div class="card-body">
-            <h5 class="fw-bold">Green Building Certification (LEED, IGBC)</h5>
-            <p class="text-muted mb-0">
-              Support and execution for environmentally responsible
-              and certified green buildings.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-6 col-lg-4">
-        <div class="card h-100 shadow-sm border-0">
-          <div class="card-body">
-            <h5 class="fw-bold">Solar & Rainwater Integration</h5>
-            <p class="text-muted mb-0">
-              Sustainable solutions that reduce operational costs
-              and environmental impact.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-6 col-lg-4">
-        <div class="card h-100 shadow-sm border-0">
-          <div class="card-body">
-            <h5 class="fw-bold">Energy-Efficient HVAC & Lighting Systems</h5>
-            <p class="text-muted mb-0">
-              Efficient mechanical and electrical systems designed
-              for performance and energy savings.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-6 col-lg-4">
-        <div class="card h-100 shadow-sm border-0">
-          <div class="card-body">
-            <h5 class="fw-bold">Sustainable Material Sourcing</h5>
-            <p class="text-muted mb-0">
-              Responsible material selection to ensure durability,
-              cost-effectiveness, and sustainability.
-            </p>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
+    </section>
 
     <footer class="bg-dark text-white py-4 mt-auto">
       <div class="container d-flex justify-content-between align-items-center">
@@ -490,35 +526,24 @@
   }
 </script>
 
-<div class="position-fixed bottom-0 end-0 p-3 d-flex flex-column gap-2" style="z-index: 1050;">
+    <div class="position-fixed bottom-0 end-0 p-3 d-flex flex-column gap-3"
+      style="z-index: 1050;">
 
-  <a
-    href="https://wa.me/919962116999"
-    target="_blank"
-    class="btn btn-success rounded-circle d-flex align-items-center justify-content-center shadow"
-    style="width: 52px; height: 52px;"
-    aria-label="WhatsApp">
-    <i class="bi bi-whatsapp fs-4"></i>
-  </a>
+      <a href="https://wa.me/919962116999" target="_blank"
+        class="btn-glossy whatsapp" aria-label="WhatsApp">
+        <i class="bi bi-whatsapp"></i>
+      </a>
 
-  <a
-    href="https://www.instagram.com/mara_infra/"
-    target="_blank"
-    class="btn btn-danger rounded-circle d-flex align-items-center justify-content-center shadow"
-    style="width: 52px; height: 52px;"
-    aria-label="Instagram">
-    <i class="bi bi-instagram fs-4"></i>
-  </a>
+      <a href="https://www.instagram.com/mara_infra/" target="_blank"
+        class="btn-glossy instagram" aria-label="Instagram">
+        <i class="bi bi-instagram"></i>
+      </a>
 
-  <a
-    href="https://www.facebook.com/"
-    target="_blank"
-    class="btn btn-primary rounded-circle d-flex align-items-center justify-content-center shadow"
-    style="width: 52px; height: 52px;"
-    aria-label="Facebook">
-    <i class="bi bi-facebook fs-4"></i>
-  </a>
+      <a href="https://www.facebook.com/" target="_blank"
+        class="btn-glossy facebook" aria-label="Facebook">
+        <i class="bi bi-facebook"></i>
+      </a>
 
-</div>
+    </div>
   </body>
 </html>
