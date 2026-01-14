@@ -1,0 +1,206 @@
+/* =========================================
+   1. VARIABLES (Control your theme here)
+   ========================================= */
+:root {
+    /* Colors */
+    --primary-color: #8b6f47;    /* Gold/Brown */
+    --text-color: #333333;       /* Dark Grey */
+    --text-light: #6c757d;       /* Light Grey */
+    --danger-color: #dc3545;     /* Red */
+    --danger-hover: #bb2d3b;     /* Darker Red */
+    --bg-white: #ffffff;
+    --bg-light: #f8f9fa;
+
+    /* Fonts */
+    --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* =========================================
+   2. GLOBAL RESETS & TYPOGRAPHY
+   ========================================= */
+* {
+    box-sizing: border-box; /* Ensures padding doesn't break widths */
+}
+
+body {
+    font-family: var(--font-main);
+    color: var(--text-color);
+    margin: 0;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+}
+
+/* =========================================
+   3. COMPONENTS & BUTTONS
+   ========================================= */
+.accordion-button {
+    font-weight: 600;
+}
+
+.det-button {
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    border-radius: 5px;
+    font-weight: 600;
+    text-align: center;
+    margin-right: 0.5rem;
+    margin-top: 0.5rem;
+    transition: background-color 0.2s;
+}
+
+.btn-red {
+    background: var(--danger-color);
+    color: #fff;
+}
+
+.btn-red:hover {
+    background: var(--danger-hover);
+    color: white;
+}
+
+.btn-white {
+    background: var(--bg-white);
+    color: var(--text-color);
+    border: 1px solid #ccc;
+}
+
+.btn-white:hover {
+    background: var(--bg-light);
+    color: var(--text-color);
+}
+
+/* =========================================
+   4. HEADER & NAVIGATION
+   ========================================= */
+header {
+    padding: 1rem 0;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Force removal of text decoration on header links */
+header a,
+header a:hover,
+header a:focus,
+header a:active {
+    text-decoration: none !important;
+}
+
+/* =========================================
+   5. PROJECT LAYOUT & IMAGES
+   ========================================= */
+.service-title {
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.project-details h1 {
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+/* Project Images */
+.project-banner img {
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.project-banner img:hover {
+    opacity: 0.9;
+}
+
+.main-img {
+    height: 450px;
+}
+
+.side-img {
+    height: 312px;
+    margin-bottom: 0px;
+    position: relative;
+}
+
+.project-logo {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 1px solid #eee;
+}
+
+/* Carousel/Modal Images */
+.carousel-item img {
+    max-height: 80vh;
+    object-fit: contain;
+    background: #000;
+}
+
+/* Image Overlay */
+.view-images-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    cursor: pointer;
+    opacity: 0.9;
+    transition: 0.3s;
+}
+
+.view-images-overlay:hover {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+/* =========================================
+   6. UTILITIES & INFO
+   ========================================= */
+.info-label {
+    font-size: 0.85rem;
+    color: var(--text-light);
+    display: block;
+    margin-bottom: 2px;
+}
+
+.info-value {
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+.feature-box {
+    padding: 1.5rem;
+    background: var(--bg-white);
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    font-weight: 500;
+}
+
+.transition-hover {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.transition-hover:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175) !important;
+}
